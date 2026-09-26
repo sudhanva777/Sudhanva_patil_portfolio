@@ -295,6 +295,383 @@ const SKILL_ICONS: Record<string, ReactNode> = {
       />
     </svg>
   ),
+  "openai-codex": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#10b981"
+        d="M4 4h16v16H4V4zm2 2v12h12V6H6zm3 2h6v2H9V8zm0 3h4v2H9v-2zm0 3h6v2H9v-2z"
+      />
+    </svg>
+  ),
+
+  // Programming Languages
+  java: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#ea2d2e"
+        d="M8.8 17.2c-.4.3-.8.6-1.1.9 2.1.8 5.6.8 7.7-.2-.6-.3-1.4-.6-2.2-.7-1.5.3-3.1.2-4.4 0zm-.9 2.2c-.4.3-.6.5-.8.8 2.5 1 7.4 1 9.8-.2-.5-.3-1.3-.6-2-.7-2.3.4-4.8.4-7 .1zm4.2-19.4c.5 1.5-1.1 2.9-1.1 4.4 0 1.6 1.8 2.7 1.8 4.3 0 1.9-1.9 3.2-1.9 5.1 0 .2 0 .4.1.6 1.3-1.2 2.6-2.8 2.6-4.9 0-2.4-1.8-3.7-1.8-5.3 0-1.2.7-2.4.3-4.2zm3.3 4.8c.4 1.1-.9 2.2-.9 3.3 0 1.2 1.4 2.1 1.4 3.3 0 1.4-1.4 2.5-1.4 3.9 0 .2 0 .3.1.5 1-.9 2-2.1 2-3.8 0-1.8-1.4-2.8-1.4-4 0-.9.5-1.8.2-3.2z"
+      />
+    </svg>
+  ),
+  r: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#276dc3"
+        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 14.5h-2V13h1.8c1.3 0 2.2-.5 2.2-1.8 0-1.3-.9-1.7-2.2-1.7H11v7H9V7.5h4c2.5 0 4 1.2 4 3.2 0 1.5-.9 2.5-2.2 2.9l2.5 2.9h-2.3l-2-2z"
+      />
+    </svg>
+  ),
+
+  // Additional Backend & ORM
+  pydantic: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <circle cx="12" cy="12" r="10" fill="#e92063" />
+      <path
+        fill="#ffffff"
+        d="M9 7h4a3.5 3.5 0 0 1 0 7H9v3H7V7h2zm0 2v3h4a1.5 1.5 0 0 0 0-3H9z"
+      />
+    </svg>
+  ),
+  sqlalchemy: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <rect width="20" height="20" x="2" y="2" rx="4" fill="#d71f00" />
+      <path
+        fill="#ffffff"
+        d="M7 8h10v2H7V8zm0 3h10v2H7v-2zm0 3h7v2H7v-2z"
+      />
+    </svg>
+  ),
+
+  // Machine Learning & Deep Learning
+  "machine-learning": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <circle cx="6" cy="6" r="2.5" fill="#6366f1" />
+      <circle cx="18" cy="6" r="2.5" fill="#8b5cf6" />
+      <circle cx="6" cy="18" r="2.5" fill="#06b6d4" />
+      <circle cx="18" cy="18" r="2.5" fill="#10b981" />
+      <circle cx="12" cy="12" r="3" fill="#f59e0b" />
+      <path
+        stroke="#ffffff"
+        strokeWidth="1.2"
+        strokeOpacity="0.4"
+        d="M6 6l6 6m0 0l6-6m-6 6l-6 6m6-6l6 6"
+      />
+    </svg>
+  ),
+  "deep-learning": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#8b5cf6"
+        d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"
+      />
+      <circle cx="6" cy="12" r="2" fill="#a78bfa" />
+      <circle cx="18" cy="12" r="2" fill="#a78bfa" />
+    </svg>
+  ),
+  pytorch: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#ee4c2c"
+        d="M13.2 2.5l-.7.7 2.1 2.1c2.8 2.8 2.8 7.4 0 10.2s-7.4 2.8-10.2 0-2.8-7.4 0-10.2l3.4-3.4-.7-.7-3.4 3.4c-3.2 3.2-3.2 8.4 0 11.6s8.4 3.2 11.6 0 3.2-8.4 0-11.6l-2.1-2.1zM15 5.5a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"
+      />
+    </svg>
+  ),
+  xgboost: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <rect width="20" height="20" x="2" y="2" rx="4" fill="#00a86b" />
+      <path
+        fill="#ffffff"
+        d="M7 8l3 4-3 4h2l2-2.7 2 2.7h2l-3-4 3-4h-2l-2 2.7L9 8H7z"
+      />
+    </svg>
+  ),
+  lightgbm: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <rect width="20" height="20" x="2" y="2" rx="4" fill="#0284c7" />
+      <path
+        fill="#ffffff"
+        d="M12 4l6 6-4 1 3 5-8-2 2-3-4-1 5-6z"
+      />
+    </svg>
+  ),
+  tensorflow: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#ff6f00"
+        d="M12 2l9 5.2v10.4L12 23 3 17.6V7.2L12 2zm-1.5 5.5v2.8h-3v1.8h3v5.6h2v-5.6h3v-1.8h-3V7.5h-2z"
+      />
+    </svg>
+  ),
+  "hugging-face": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <circle cx="12" cy="12" r="10" fill="#ffd21e" />
+      <circle cx="8.5" cy="10" r="1.5" fill="#000000" />
+      <circle cx="15.5" cy="10" r="1.5" fill="#000000" />
+      <path
+        stroke="#000000"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        fill="none"
+        d="M8.5 14.5c1 1.5 6 1.5 7 0"
+      />
+    </svg>
+  ),
+  "large-language-models": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#a78bfa"
+        d="M4 4h16v16H4V4zm2 2v12h12V6H6zm3 2h6v2H9V8zm0 3h4v2H9v-2zm0 3h6v2H9v-2z"
+      />
+    </svg>
+  ),
+  "large-language-models-llms": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#a78bfa"
+        d="M4 4h16v16H4V4zm2 2v12h12V6H6zm3 2h6v2H9V8zm0 3h4v2H9v-2zm0 3h6v2H9v-2z"
+      />
+    </svg>
+  ),
+  "retrieval-augmented-generation": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#7c3aed"
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+      />
+    </svg>
+  ),
+  "retrieval-augmented-generation-rag": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#7c3aed"
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+      />
+    </svg>
+  ),
+
+  // Data Science, Visualization & Analytics
+  matplotlib: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <circle cx="12" cy="12" r="10" fill="#11557c" />
+      <path
+        stroke="#ffffff"
+        strokeWidth="1.8"
+        fill="none"
+        d="M6 16c2-4 4-8 6-4s4 6 6-3"
+      />
+    </svg>
+  ),
+  seaborn: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <rect width="20" height="20" x="2" y="2" rx="4" fill="#4c72b0" />
+      <path
+        stroke="#55a868"
+        strokeWidth="2"
+        fill="none"
+        d="M4 14c3-6 5-6 8 0s5 6 8 0"
+      />
+    </svg>
+  ),
+  plotly: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#3f4f75"
+        d="M4 18h2V6H4v12zm4 0h2V10H8v8zm4 0h2V2h-2v16zm4 0h2V8h-2v10zm4 0h2V12h-2v6z"
+      />
+    </svg>
+  ),
+  "data-cleaning": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#10b981"
+        d="M19.36 10.04l-7.4-7.4a2 2 0 0 0-2.83 0L3.5 8.28a2 2 0 0 0 0 2.83l7.4 7.4a2 2 0 0 0 2.83 0l5.63-5.64a2 2 0 0 0 0-2.83zm-7.4-5.98l4.95 4.95-2.12 2.12-4.95-4.95 2.12-2.12z"
+      />
+    </svg>
+  ),
+  "exploratory-data-analysis": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#6366f1"
+        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+      />
+    </svg>
+  ),
+  "exploratory-data-analysis-eda": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#6366f1"
+        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+      />
+    </svg>
+  ),
+  "statistical-analysis": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#06b6d4"
+        d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"
+      />
+    </svg>
+  ),
+  "time-series-analysis": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="#f59e0b" strokeWidth="2" />
+      <path
+        stroke="#f59e0b"
+        strokeWidth="2"
+        strokeLinecap="round"
+        d="M12 7v5l3 2"
+      />
+    </svg>
+  ),
+  "feature-engineering": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#ec4899"
+        d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"
+      />
+    </svg>
+  ),
+  "data-visualization": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#8b5cf6"
+        d="M5 19h14v2H3V3h2v16zm4-4h2v2H9v-2zm4-6h2v8h-2V9zm4 3h2v5h-2v-5z"
+      />
+    </svg>
+  ),
+
+  // BI & Reporting
+  "microsoft-power-bi": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#f2c811"
+        d="M10 4h4v16h-4V4zm-5 6h4v10H5V10zm10-2h4v12h-4V8z"
+      />
+    </svg>
+  ),
+  "microsoft-excel": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <rect width="20" height="20" x="2" y="2" rx="3" fill="#107c41" />
+      <path
+        fill="#ffffff"
+        d="M7 7l3 5-3 5h2.5l1.5-2.8 1.5 2.8H15l-3-5 3-5h-2.5L11 9.8 9.5 7H7z"
+      />
+    </svg>
+  ),
+  excel: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <rect width="20" height="20" x="2" y="2" rx="3" fill="#107c41" />
+      <path
+        fill="#ffffff"
+        d="M7 7l3 5-3 5h2.5l1.5-2.8 1.5 2.8H15l-3-5 3-5h-2.5L11 9.8 9.5 7H7z"
+      />
+    </svg>
+  ),
+  "sql-analytics": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#00758f"
+        d="M12 2C6.48 2 2 4.24 2 7v10c0 2.76 4.48 5 10 5s10-2.24 10-5V7c0-2.76-4.48-5-10-5zm0 2c4.42 0 8 1.57 8 3s-3.58 3-8 3-8-1.57-8-3 3.58-3 8-3zm0 16c-4.42 0-8-1.57-8-3v-2.23c2.08 1.39 5.08 2.23 8 2.23s5.92-.84 8-2.23V17c0 1.43-3.58 3-8 3z"
+      />
+    </svg>
+  ),
+  "dashboard-development": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#3b82f6"
+        d="M3 3h8v8H3V3zm10 0h8v5h-8V3zm0 7h8v11h-8V10zm-10 3h8v8H3v-8z"
+      />
+    </svg>
+  ),
+  "kpi-reporting": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <circle cx="12" cy="12" r="10" fill="#10b981" />
+      <path
+        stroke="#ffffff"
+        strokeWidth="2"
+        strokeLinecap="round"
+        fill="none"
+        d="M8 12l3 3 5-6"
+      />
+    </svg>
+  ),
+  "business-intelligence": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#8b5cf6"
+        d="M12 3L2 12h3v8h14v-8h3L12 3zm1 14h-2v-4h2v4zm0-6h-2V9h2v2z"
+      />
+    </svg>
+  ),
+
+  // Databases
+  sqlite: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#003b57"
+        d="M12 2C6.48 2 2 4.24 2 7v10c0 2.76 4.48 5 10 5s10-2.24 10-5V7c0-2.76-4.48-5-10-5zm0 3c3.86 0 7 1.34 7 3s-3.14 3-7 3-7-1.34-7-3 3.14-3 7-3z"
+      />
+    </svg>
+  ),
+
+  // Cloud & DevOps
+  aws: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#ff9900"
+        d="M6.2 13.8c-.8.6-1.7.9-2.7.9-1.9 0-3.5-1.4-3.5-3.5 0-2.2 1.7-3.6 3.6-3.6 1 0 1.8.3 2.5.8v-3H8v10.5H6.2v-2.1zm0-3.3c-.6-.5-1.3-.7-2.1-.7-1.1 0-2 .8-2 2s.8 2 2 2c.8 0 1.5-.2 2.1-.7v-2.6zm6.3 5.4h-1.8l-1.9-8.4h1.8l1.1 5.7 1.3-5.7h1.6l1.3 5.7 1.1-5.7H20l-1.9 8.4h-1.8l-1.4-5.6-1.4 5.6zm9.3-3.2c-.6.3-1.4.5-2.2.5-.9 0-1.5-.4-1.5-1.1 0-1.8 4.2-.9 4.2-3.8 0-1.5-1.2-2.5-3-2.5-1.2 0-2.2.4-2.8.9l.7 1.3c.5-.4 1.3-.7 2.1-.7.8 0 1.3.4 1.3.9 0 1.7-4.2.8-4.2 3.8 0 1.6 1.2 2.6 3.1 2.6 1 0 2-.3 2.6-.7l-.3-1.2z"
+      />
+    </svg>
+  ),
+  "aws-amazon-web-services": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#ff9900"
+        d="M6.2 13.8c-.8.6-1.7.9-2.7.9-1.9 0-3.5-1.4-3.5-3.5 0-2.2 1.7-3.6 3.6-3.6 1 0 1.8.3 2.5.8v-3H8v10.5H6.2v-2.1zm0-3.3c-.6-.5-1.3-.7-2.1-.7-1.1 0-2 .8-2 2s.8 2 2 2c.8 0 1.5-.2 2.1-.7v-2.6zm6.3 5.4h-1.8l-1.9-8.4h1.8l1.1 5.7 1.3-5.7h1.6l1.3 5.7 1.1-5.7H20l-1.9 8.4h-1.8l-1.4-5.6-1.4 5.6zm9.3-3.2c-.6.3-1.4.5-2.2.5-.9 0-1.5-.4-1.5-1.1 0-1.8 4.2-.9 4.2-3.8 0-1.5-1.2-2.5-3-2.5-1.2 0-2.2.4-2.8.9l.7 1.3c.5-.4 1.3-.7 2.1-.7.8 0 1.3.4 1.3.9 0 1.7-4.2.8-4.2 3.8 0 1.6 1.2 2.6 3.1 2.6 1 0 2-.3 2.6-.7l-.3-1.2z"
+      />
+    </svg>
+  ),
+  vercel: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path fill="#ffffff" d="M12 2l10 18H2L12 2z" />
+    </svg>
+  ),
+  render: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <rect width="20" height="20" x="2" y="2" rx="4" fill="#46e3b7" />
+      <path
+        fill="#000000"
+        d="M8 7h4a3 3 0 0 1 3 3c0 1.2-.7 2.2-1.7 2.7L16 17h-2.5l-2.3-3.8H10V17H8V7zm2 2v4.2h2a1.8 1.8 0 0 0 0-3.6h-2V9z"
+      />
+    </svg>
+  ),
+
+  // Testing & Development Tools
+  pytest: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#0a9edc"
+        d="M12 2L2 7v10l10 5 10-5V7L12 2zm-1 14.5l-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z"
+      />
+    </svg>
+  ),
+  postman: (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <circle cx="12" cy="12" r="10" fill="#ff6c37" />
+      <path
+        fill="#ffffff"
+        d="M12 7l4 5h-3v5h-2v-5H8l4-5z"
+      />
+    </svg>
+  ),
+  "vs-code": (
+    <svg viewBox="0 0 24 24" className="w-7 h-7">
+      <path
+        fill="#007acc"
+        d="M17.5 2.5L12 7.7 7.5 4.3 3 7.2v9.6l4.5 2.9L12 16.3l5.5 5.2 3.5-1.7V4.2l-3.5-1.7zm0 4.8v9.4L13.8 12 17.5 7.3zM5.5 8.7L9.2 12 5.5 15.3V8.7z"
+      />
+    </svg>
+  ),
 
   // Core Computer Science
   "data-structures-and-algorithms": (
