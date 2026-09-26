@@ -57,7 +57,7 @@ export function Navbar() {
           <div className="hidden sm:flex flex-col">
             <span className="text-sm font-semibold">Sudhanva Patil</span>
             <span className="text-[11px] text-[var(--text-muted)]">
-              AI Engineer · Data Scientist
+              Backend Engineer · Software Engineer
             </span>
           </div>
         </Link>
@@ -93,7 +93,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="/resume.pdf"
+            href="/Resume_sudhanva.pdf"
             download="Sudhanva_Patil_Resume.pdf"
             className="hidden md:inline-flex btn-primary"
           >
@@ -140,7 +140,7 @@ export function Navbar() {
                 );
               })}
               <a
-                href="/resume.pdf"
+                href="/Resume_sudhanva.pdf"
                 download="Sudhanva_Patil_Resume.pdf"
                 className="mt-2 mx-4 py-3 rounded-lg btn-primary justify-center"
               >

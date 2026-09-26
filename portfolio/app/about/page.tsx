@@ -71,8 +71,9 @@ export default function AboutPage() {
                 {personalInfo.name}
               </h2>
               <div className="flex gap-2 flex-wrap mb-2">
-                <span className="badge-ai">AI Engineer</span>
-                <span className="badge-ds">Data Scientist</span>
+                <span className="badge-ai">Backend Engineer</span>
+                <span className="badge-ds">Software Engineer</span>
+                <span className="badge-cv">Full-Stack Developer</span>
               </div>
               <p className="text-sm text-[var(--text-muted)] flex items-center gap-1">
                 📍 {personalInfo.location}

@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { experiences } from "@/lib/data";
+import { experiences, education, certifications } from "@/lib/data";
+import { Award, GraduationCap, Briefcase } from "lucide-react";
 
 export default function ExperiencePage() {
   return (
@@ -11,11 +12,10 @@ export default function ExperiencePage() {
           className="text-sm font-semibold mb-2"
           style={{ color: "var(--accent-amber)" }}
         >
-          Career
+          Career & Qualifications
         </p>
         <h1 className="section-heading text-[var(--text-primary)]">
-          Work{" "}
-          <span className="gradient-text-ai">Experience</span>
+          Work <span className="gradient-text-ai">Experience</span>
         </h1>
       </div>
 
@@ -29,9 +29,7 @@ export default function ExperiencePage() {
         />
 
         <div className="space-y-10">
-          {experiences
-            .filter((exp) => exp.company === "Inventron Technologies")
-            .map((exp, i) => (
+          {experiences.map((exp, i) => (
             <motion.div
               key={exp.id}
               initial={{ opacity: 0, x: -24 }}
@@ -73,7 +71,7 @@ export default function ExperiencePage() {
                             color: "#6ee7b7",
                           }}
                         >
-                          Current
+                          Internship
                         </span>
                       )}
                     </div>
@@ -107,7 +105,7 @@ export default function ExperiencePage() {
                 </p>
                 <div>
                   <p className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-2">
-                    Key Achievements
+                    Key Contributions & Responsibilities
                   </p>
                   <ul className="space-y-2">
                     {exp.achievements.map((a) => (
@@ -136,27 +134,95 @@ export default function ExperiencePage() {
           ))}
         </div>
 
+        {/* Education Section */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 glass-card p-7 flex items-start gap-4"
+          className="mt-12 glass-card p-7"
         >
-          <span className="text-3xl shrink-0">🎓</span>
-          <div>
-            <h3 className="font-bold text-[var(--text-primary)] mb-1">
-              B.E. in Computer Science and Data Science
-            </h3>
-            <p
-              className="font-semibold text-sm mb-1"
-              style={{ color: "var(--accent-indigo)" }}
-            >
-              St. Joseph Engineering College, Mangalore
-            </p>
-            <p className="text-sm text-[var(--text-muted)]">2022 – 2026</p>
-            <p className="text-sm text-[var(--text-secondary)] mt-2">
-              CGPA: 8.13 / 10
-            </p>
+          <div className="flex items-start gap-4">
+            <div className="p-3 rounded-xl bg-indigo-500/10 text-indigo-400 shrink-0">
+              <GraduationCap className="w-6 h-6" />
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                <h3 className="font-bold text-lg text-[var(--text-primary)]">
+                  {education.degree}
+                </h3>
+                <span className="text-sm text-[var(--text-muted)] font-mono">
+                  {education.period}
+                </span>
+              </div>
+              <p
+                className="font-semibold text-sm mb-2"
+                style={{ color: "var(--accent-indigo)" }}
+              >
+                {education.institution}
+              </p>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-medium mb-4">
+                <span>Academic Record: CGPA {education.cgpa}</span>
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-2">
+                  Relevant Coursework
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {education.coursework.map((course) => (
+                    <span
+                      key={course}
+                      className="text-xs px-2.5 py-1 rounded-md bg-[var(--bg-elevated)] text-[var(--text-secondary)] border border-white/5"
+                    >
+                      {course}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Certifications Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-6 glass-card p-7"
+        >
+          <div className="flex items-start gap-4">
+            <div className="p-3 rounded-xl bg-violet-500/10 text-violet-400 shrink-0">
+              <Award className="w-6 h-6" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-bold text-lg text-[var(--text-primary)] mb-1">
+                Professional Certifications
+              </h3>
+              <p className="text-xs text-[var(--text-muted)] mb-4">
+                Verified industry certifications in Generative AI and Data Science
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {certifications.map((cert) => (
+                  <div
+                    key={cert.name}
+                    className="p-3.5 rounded-xl bg-[var(--bg-elevated)] border border-white/5 flex flex-col justify-between"
+                  >
+                    <div>
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-violet-400">
+                        {cert.issuer}
+                      </span>
+                      <h4 className="text-sm font-semibold text-[var(--text-primary)] mt-1">
+                        {cert.name}
+                      </h4>
+                    </div>
+                    {cert.badge && (
+                      <span className="text-[11px] text-[var(--text-muted)] mt-2">
+                        ✓ {cert.badge}
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>

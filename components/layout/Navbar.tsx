@@ -44,7 +44,7 @@ export const Navbar = () => {
           </div>
           <div className="hidden sm:block">
             <p className="text-sm font-bold tracking-tight">Sudhanva Patil</p>
-            <p className="text-[10px] text-text-muted font-mono uppercase tracking-[0.2em]">AI Engineer × DS</p>
+            <p className="text-[10px] text-text-muted font-mono uppercase tracking-[0.2em]">Backend Engineer · Software Engineer</p>
           </div>
         </Link>
 
@@ -81,7 +81,7 @@ export const Navbar = () => {
           <div className="w-[1px] h-6 bg-white/10 mx-2" />
 
           <Link
-            href="/resume.pdf"
+            href="/Resume_sudhanva.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary py-2 px-5 text-sm"
@@ -120,7 +120,7 @@ export const Navbar = () => {
                 </Link>
               ))}
               <Link
-                href="/resume.pdf"
+                href="/Resume_sudhanva.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full py-4 mt-2"

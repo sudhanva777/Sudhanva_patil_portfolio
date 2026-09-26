@@ -14,26 +14,29 @@ const sora = Sora({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sudhanva Patil — AI Engineer & Data Scientist",
+    default: "Sudhanva Patil — Backend Engineer & Software Engineer",
     template: "%s | Sudhanva Patil",
   },
   description:
-    "Sudhanva Patil — AI Engineer & Data Scientist building production-grade AI systems: autonomous Data Science agents, medical AI research tools, and applied ML solutions. Available for full-time roles.",
+    "Sudhanva Patil — Computer Science graduate building full-stack applications, REST APIs, and database-driven systems using Python, FastAPI, React, JavaScript, SQL, and PostgreSQL. Available for full-time roles.",
   keywords: [
+    "Sudhanva Patil",
+    "Backend Engineer",
+    "Software Engineer",
+    "Full-Stack Developer",
     "AI Engineer",
-    "Data Scientist",
-    "Machine Learning",
-    "Deep Learning",
-    "Computer Vision",
-    "MLOps",
     "Python",
-    "PyTorch",
+    "FastAPI",
+    "React",
+    "PostgreSQL",
+    "Docker",
+    "REST APIs",
   ],
   authors: [{ name: "Sudhanva Patil" }],
   openGraph: {
-    title: "Sudhanva Patil — AI Engineer & Data Scientist",
+    title: "Sudhanva Patil — Backend Engineer & Software Engineer",
     description:
-      "AI Engineer & Data Scientist · Production AI · Medical AI · Applied ML",
+      "Backend Engineer | Software Engineer · Full-Stack Applications · REST APIs · PostgreSQL",
     type: "website",
     locale: "en_US",
   },

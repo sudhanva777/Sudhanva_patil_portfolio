@@ -23,10 +23,10 @@ export function Footer() {
               {personalInfo.name}
             </p>
             <p className="text-sm text-[var(--text-muted)] mt-1">
-              AI Engineer · Data Scientist
+              Backend Engineer · Software Engineer
             </p>
             <p className="text-sm text-[var(--text-secondary)] mt-2">
-              Building intelligent systems that scale.
+              Building scalable web applications, REST APIs, and database systems.
             </p>
           </div>
 

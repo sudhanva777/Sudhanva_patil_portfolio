@@ -17,13 +17,13 @@ export const Footer = () => {
               Sudhanva<span className="text-primary">.P</span>
             </Link>
             <p className="text-sm text-text-tertiary max-w-xs">
-              AI Engineer specializing in production-ready machine learning systems and intelligent agentic pipelines.
+              Backend Engineer & Software Engineer building scalable full-stack applications, REST APIs, and database systems.
             </p>
           </div>
 
           <div className="flex justify-center gap-6">
             <Link
-              href="https://github.com/sudhanva-patil"
+              href="https://github.com/sudhanva777"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all border border-white/5 hover:border-primary/50 text-text-secondary hover:text-primary hover:scale-110 active:scale-95"

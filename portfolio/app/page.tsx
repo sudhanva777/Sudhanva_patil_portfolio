@@ -83,8 +83,7 @@ export default function HomePage() {
   const featuredProjects = projects.filter((p) => p.featured);
   const BADGE: Record<string, string> = {
     "AI Engineering": "badge-ai",
-    "Computer Vision": "badge-cv",
-    "ML Deployment": "badge-ml",
+    "Backend Development": "badge-ml",
     "Data Science": "badge-ds",
     "Data Analytics": "badge-analytics",
   };
@@ -159,28 +158,26 @@ export default function HomePage() {
             </h1>
 
             <div className="flex items-center justify-center gap-2 flex-wrap">
-              {["AI Engineer", "Data Scientist", "ML Engineer", "Data Analyst", "Python Developer"].map(
-                (role, i) => (
-                  <span key={role} className="inline-flex items-center gap-1">
-                    {i > 0 && (
-                      <span className="text-[var(--text-muted)]">×</span>
-                    )}
-                    <span
-                      className={
-                        role.includes("AI") || role.includes("ML Engineer")
-                          ? "badge-ai"
-                          : role === "Data Scientist"
-                            ? "badge-ds"
-                            : role === "Data Analyst"
-                              ? "badge-analytics"
-                              : "badge-ml"
-                      }
-                    >
-                      {role}
-                    </span>
+              {personalInfo.roles.map((role, i) => (
+                <span key={role} className="inline-flex items-center gap-1">
+                  {i > 0 && (
+                    <span className="text-[var(--text-muted)]">×</span>
+                  )}
+                  <span
+                    className={
+                      role === "AI Engineer"
+                        ? "badge-ai"
+                        : role === "Backend Engineer"
+                          ? "badge-ml"
+                          : role === "Full-Stack Developer"
+                            ? "badge-cv"
+                            : "badge-ds"
+                    }
+                  >
+                    {role}
                   </span>
-                )
-              )}
+                </span>
+              ))}
             </div>
 
             <div className="flex justify-center min-h-[3rem]">
@@ -191,9 +188,8 @@ export default function HomePage() {
               className="text-[var(--text-muted)] max-w-xl mx-auto text-sm leading-relaxed"
               style={{ fontSize: "0.95rem" }}
             >
-              Building production-grade AI systems—autonomous Data Science agents,
-              medical AI research tools, and applied ML solutions. Available for
-              full-time roles.
+              Computer Science graduate building full-stack applications, REST APIs,
+              and database-driven systems using Python, FastAPI, React, JavaScript, SQL, and PostgreSQL.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">

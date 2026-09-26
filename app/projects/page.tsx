@@ -12,8 +12,7 @@ import {
 
 const BADGE: Record<Domain, string> = {
   "AI Engineering": "badge-ai",
-  "Computer Vision": "badge-cv",
-  "ML Deployment": "badge-ml",
+  "Backend Development": "badge-ml",
   "Data Science": "badge-ds",
   "Data Analytics": "badge-analytics",
 };
@@ -52,7 +51,7 @@ export default function ProjectsPage() {
       </div>
 
       <div className="flex flex-wrap gap-2 mb-10">
-        {(["All", "AI Engineering", "Computer Vision", "ML Deployment", "Data Science", "Data Analytics"] as const).map(
+        {(["All", "AI Engineering", "Backend Development", "Data Science", "Data Analytics"] as const).map(
           (domain) => (
             <button
               key={domain}

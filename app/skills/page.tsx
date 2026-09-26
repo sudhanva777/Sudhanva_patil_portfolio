@@ -70,9 +70,9 @@ export default function SkillsPage() {
         className="mt-16 text-sm text-[var(--text-secondary)] text-center"
       >
         Always learning. Currently exploring:{" "}
-        <span style={{ color: "var(--accent-indigo)" }}>LangChain</span> ·{" "}
-        <span style={{ color: "var(--accent-emerald)" }}>Ray</span> ·{" "}
-        <span style={{ color: "var(--accent-violet)" }}>Rust for ML</span>
+        <span style={{ color: "var(--accent-indigo)" }}>Agentic Workflows</span> ·{" "}
+        <span style={{ color: "var(--accent-emerald)" }}>High-Performance REST APIs</span> ·{" "}
+        <span style={{ color: "var(--accent-violet)" }}>Cloud Architecture</span>
       </motion.p>
     </div>
   );

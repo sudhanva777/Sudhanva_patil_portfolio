@@ -34,9 +34,6 @@ export default function SkillsPage() {
               <h2 className="text-xl font-semibold text-[var(--text-primary)]">
                 {category.category}
               </h2>
-              <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-[var(--bg-elevated)] text-[var(--text-muted)] border border-white/5">
-                {category.skills.length}
-              </span>
               <div
                 className="flex-1 h-px opacity-20"
                 style={{ background: "var(--accent-indigo)" }}
@@ -56,7 +53,7 @@ export default function SkillsPage() {
                   <div className="w-7 h-7 flex items-center justify-center shrink-0">
                     {getSkillIcon(skill)}
                   </div>
-                  <span className="text-xs font-medium text-[var(--text-primary)] text-center leading-snug w-full break-words hyphens-auto">
+                  <span className="text-xs font-semibold text-[var(--text-primary)] truncate w-full">
                     {skill}
                   </span>
                 </motion.div>
@@ -73,9 +70,9 @@ export default function SkillsPage() {
         className="mt-16 text-sm text-[var(--text-secondary)] text-center"
       >
         Always learning. Currently exploring:{" "}
-        <span style={{ color: "var(--accent-indigo)" }}>LangChain</span> ·{" "}
-        <span style={{ color: "var(--accent-emerald)" }}>Ray</span> ·{" "}
-        <span style={{ color: "var(--accent-violet)" }}>Rust for ML</span>
+        <span style={{ color: "var(--accent-indigo)" }}>Agentic Workflows</span> ·{" "}
+        <span style={{ color: "var(--accent-emerald)" }}>High-Performance REST APIs</span> ·{" "}
+        <span style={{ color: "var(--accent-violet)" }}>Cloud Architecture</span>
       </motion.p>
     </div>
   );

@@ -15,7 +15,7 @@ export default function ResumePage() {
             <span className="gradient-text-hero">Resume</span>
           </h1>
           <a
-            href="/resume.pdf"
+            href="/Resume_sudhanva.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download="Sudhanva_Patil_Resume.pdf"
@@ -27,7 +27,7 @@ export default function ResumePage() {
 
         <div className="glass-card p-4 sm:p-6 overflow-hidden">
           <iframe
-            src="/resume.pdf"
+            src="/Resume_sudhanva.pdf"
             title="Sudhanva Patil - Resume"
             className="w-full h-[80vh] min-h-[500px] rounded-xl border-0"
             style={{
